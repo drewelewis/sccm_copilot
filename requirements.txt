@@ -1,0 +1,13 @@
+numpy
+tiktoken
+openai==1.10.0
+jinja2
+typing
+pandas
+requests
+pydantic
+marshmallow
+termcolor
+python-dotenv
+pillow
+pyodbc
