@@ -11,3 +11,5 @@ termcolor
 python-dotenv
 pillow
 pyodbc
+jsonlines
+openai-cli

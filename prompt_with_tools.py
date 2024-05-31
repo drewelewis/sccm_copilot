@@ -17,13 +17,10 @@ database = database.Database(
         password = os.getenv("_PASSWORD")
     )
 
-#schema = database.get_tables()
-#foreign_keys = database.get_foreign_keys()
-#views = database.get_views()
 
 client = AzureOpenAI(
         api_key=os.getenv("_OPENAI_API_KEY"),  
-        api_version="2023-12-01-preview",
+        api_version=os.getenv("_OPENAI_API_VERSION"),
         azure_endpoint = os.getenv("_OPENAI_API_BASE")
     )
 
@@ -76,13 +73,15 @@ def run_conversation():
         },
     ]
     response = client.chat.completions.create(
-        model="gpt-35-turbo",
+        model="gpt-4o",
         temperature=0,
         messages=messages,
         tools=tools,
         tool_choice="auto",  # auto is default, but we'll be explicit
     )
     response_message = response.choices[0].message
+
+
 
     try:
         tool_calls = response_message.tool_calls

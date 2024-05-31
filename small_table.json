@@ -1,0 +1,199 @@
+{
+  "views": [
+    {
+      "name": "v_PeerSourceRejectionData",
+      "fields": [
+        {
+          "name": "StatusTime",
+          "type": "datetime"
+        },
+        {
+          "name": "TotalMemberCount",
+          "type": "int"
+        },
+        {
+          "name": "OverallStatusProtectedCount",
+          "type": "int"
+        },
+        {
+          "name": "OverallStatusAtRiskCount",
+          "type": "int"
+        },
+        {
+          "name": "OverallStatusNotYetInstalledCount",
+          "type": "int"
+        },
+        {
+          "name": "OverallStatusNotSupportedCount",
+          "type": "int"
+        },
+        {
+          "name": "OverallStatusInactiveCount",
+          "type": "int"
+        },
+        {
+          "name": "OverallNotClientCount",
+          "type": "int"
+        },
+        {
+          "name": "InfectedCount",
+          "type": "int"
+        },
+        {
+          "name": "FullscanRequiredCount",
+          "type": "int"
+        },
+        {
+          "name": "RestartRequiredCount",
+          "type": "int"
+        },
+        {
+          "name": "OfflineScanRequiredCount",
+          "type": "int"
+        },
+        {
+          "name": "ManualStepsRequiredCount",
+          "type": "int"
+        },
+        {
+          "name": "RecentlyCleanedCount",
+          "type": "int"
+        },
+        {
+          "name": "ThreatActivityCount",
+          "type": "int"
+        },
+        {
+          "name": "InstallFailedCount",
+          "type": "int"
+        },
+        {
+          "name": "ApplyPolicySucceededCount",
+          "type": "int"
+        },
+        {
+          "name": "ApplyPolicyFailedCount",
+          "type": "int"
+        },
+        {
+          "name": "InstallRebootPendingCount",
+          "type": "int"
+        },
+        {
+          "name": "UnhealthyCount",
+          "type": "int"
+        },
+        {
+          "name": "TotalOperationalIssueCount",
+          "type": "int"
+        },
+        {
+          "name": "UpTo1DayOldCount",
+          "type": "int"
+        },
+        {
+          "name": "UpTo3DaysOldCount",
+          "type": "int"
+        },
+        {
+          "name": "UpTo7DaysOldCount",
+          "type": "int"
+        },
+        {
+          "name": "OlderThan7DaysCount",
+          "type": "int"
+        },
+        {
+          "name": "NoSignatureCount",
+          "type": "int"
+        },
+        {
+          "name": "LastScanUpTo2DaysOldCount",
+          "type": "int"
+        },
+        {
+          "name": "LastScanUpTo8DaysOldCount",
+          "type": "int"
+        },
+        {
+          "name": "LastScanUpTo31DaysOldCount",
+          "type": "int"
+        },
+        {
+          "name": "LastScanOver31DaysOldCount",
+          "type": "int"
+        }
+      ]
+    },
+    {
+      "name": "v_WOLTSTargetedClients",
+      "fields": [
+        {
+          "name": "ResourceName",
+          "type": "nvarchar"
+        },
+        {
+          "name": "ContentID",
+          "type": "nvarchar"
+        },
+        {
+          "name": "ContentName",
+          "type": "nvarchar"
+        },
+        {
+          "name": "ReportTime",
+          "type": "datetime"
+        },
+        {
+          "name": "RejectionType",
+          "type": "int"
+        },
+        {
+          "name": "RejectionCount",
+          "type": "int"
+        },
+        {
+          "name": "Description",
+          "type": "nvarchar"
+        },
+        {
+          "name": "SourceVersion",
+          "type": "int"
+        },
+        {
+          "name": "Language",
+          "type": "nvarchar"
+        },
+        {
+          "name": "PkgID",
+          "type": "nvarchar"
+        },
+        {
+          "name": "SourceSite",
+          "type": "nvarchar"
+        }
+      ]
+    },
+    {
+      "name": "v_HS_X86_PC_MEMORY",
+      "fields": [
+        {
+          "name": "ObjectID",
+          "type": "nvarchar"
+        },
+        {
+          "name": "ResourceID",
+          "type": "int"
+        },
+        {
+          "name": "AssignedSite",
+          "type": "nvarchar"
+        },
+        {
+          "name": "CurrentTimezone",
+          "type": "int"
+        }
+      ]
+    }
+  ]
+}
